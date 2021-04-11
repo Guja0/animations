@@ -1,0 +1,47 @@
+.wraper-box {
+	width: 400px;
+	height: 400px;
+	background-color: yellow;
+	position: relative;
+
+/*	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	transition-delay: 2s;*/
+	transition: all 0.5s linear ;
+}
+.child-box {
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(45deg);
+
+	transition: all 0.3s ease-in;
+}
+
+.wraper-box:hover {
+	background-color: blue;
+}
+.child-box:hover {
+	background-color: aqua;
+	transform: translate(-50%, -50%); rotate(0deg);
+}
+
+.wraper-box:hover .child-box {
+	background-color: pink;
+}
+
+/*animation example chat icon
+/*.chat-icon {
+	height: 100px;
+	animation: chatanimation2 5s infinite;*/
+	/*position: absolute;*/
+}
+/*.chat-wraper {*/
+	/*position: relative;*/
+}*/
+
+
